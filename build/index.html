@@ -5,9 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
+    <div class="page-conatiner">
+      <main class="container">
+        <h1 class="headline-txt">Infinite Gallery</h1>
+        <div class="gallery-wrapper">
+          <ul class="gallery" id="gallery"></ul>
+          <div class="loader-wrap">
+            <svg class="loader" id="loader" viewbox="0 0 120 120" width="60" height="60">
+              <circle cx="60" cy="60" r="50"></circle>
+            </svg>
+          </div>
+        </div>
+      </main>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>

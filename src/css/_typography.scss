@@ -1,0 +1,17 @@
+.headline-txt {
+  display: inline-block;
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 700;
+  background-image: linear-gradient(-45deg, rgb(0, 0, 255), rgb(0, 0, 134));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@media screen and (min-width: 425px) {
+  .headline-txt {
+    font-size: 56px;
+    letter-spacing: 2px;
+  }
+}

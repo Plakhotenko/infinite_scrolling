@@ -1,0 +1,49 @@
+.loader-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+}
+
+.loader {
+  animation: rotate 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  circle {
+    fill: none;
+    stroke: blue;
+    stroke-linecap: round;
+    stroke-opacity: 0.8;
+    stroke-width: 10;
+    animation: stroke 2s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes stroke {
+  0% {
+    stroke-dasharray: 0 310;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 200 310;
+    stroke-dashoffset: -35;
+  }
+
+  100% {
+    stroke-dasharray: 200 310;
+    stroke-dashoffset: -310;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
